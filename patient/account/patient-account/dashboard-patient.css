@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.main{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #eef5fb;
+    display: flex;
+}
+
+.dashboard{
+    min-height: 100vh;
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome{
+    width: 100%;
+    height: 90px;
+    text-align: right;
+    padding: 25px 50px 0 0;
+}
+
+.welcome h2{
+    font-size: 24px;
+    font-weight: 800;
+    color: #0f2744;
+}
+
+.welcome p{
+    font-size: 15px;
+    color: #1a6eb5;
+    font-weight: 500;
+}
+
+.stats{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.stats .mini-container{
+    width: 230px;
+    height: 100px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 20px 10px 0 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(15, 39, 68, 0.08);
+    gap: 10px;
+}
+
+.stats .mini-container p{
+    color: #1a6eb5;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.stats .mini-container span{
+    font-weight: 800;
+    font-size: 30px;
+    color: #0f2744;
+}
+
+.holder{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.25);
+    transform: translate(10px,-5px);
+    background-color: #1a6eb5;
+}
+
+.holder i{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.myappointments{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myappointments .recent-appointments{
+    width: 90%;
+    min-height: 200px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(15, 39, 68, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.myappointments .recent-appointments .title{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px 25px 0 0;
+    border-bottom: solid rgba(26, 110, 181, 0.15) 1px;
+}
+
+.recent-appointments .title p{
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f2744;
+}
+
+.recent-appointments .title button{
+    position: absolute;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Tajawal', sans-serif;
+    transform: translate(-580%,-5px);
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #1a6eb5;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.25);
+    width: 130px;
+    height: 30px;
+    cursor: pointer;
+    transition: background 0.25s;
+}
+
+.recent-appointments .title button:hover{
+    background-color: #0f2744;
+}
+
+.recent-appointments .appointments-infos{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: rgba(26, 110, 181, 0.1) solid 1px;
+}
+
+.recent-appointments .appointments-infos .doc-logo{
+    position: absolute;
+    background-color: #e8f2fb;
+    height: 35px;
+    width: 35px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(200%,20%);
+}
+
+.recent-appointments .appointments-infos .doc-intro{
+    text-align: right;
+    padding-right: 50px;
+}
+
+.recent-appointments .appointments-infos .doc-logo i{
+    font-size: 20px;
+    color: #1a6eb5;
+}
+
+.recent-appointments .appointments-infos .doc-intro p{
+    font-weight: 700;
+    color: #0f2744;
+}
+
+.recent-appointments .appointments-infos .doc-intro span{
+    color: #1a6eb5;
+    font-size: 13px;
+}
+
+.recent-appointments .appointments-infos .time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recent-appointments .appointments-infos .time span{
+    font-weight: 700;
+    color: #0f2744;
+}
+
+.recent-appointments .appointments-infos .app-stat{
+    background-color: rgba(26, 188, 156, 0.15);
+    height: 25px;
+    width: 80px;
+    border-radius: 30px;
+    text-align: center;
+    align-self: center;
+}
+
+.recent-appointments .appointments-infos .app-stat p{
+    color: #1abc9c;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.recent-appointments .take-appointment{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recent-appointments .take-appointment button{
+    width: 90%;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Tajawal', sans-serif;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.25);
+    background-color: #1a6eb5;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.25s;
+}
+
+.recent-appointments .take-appointment button:hover{
+    background-color: #0f2744;
+}
+
+.others{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.others .serv{
+    height: 170px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0 4px 16px rgba(15, 39, 68, 0.08);
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: box-shadow 0.25s, transform 0.25s;
+}
+
+.others .serv:hover{
+    box-shadow: 0 8px 24px rgba(26, 110, 181, 0.2);
+}
+
+.others .serv p{
+    font-weight: 700;
+    font-size: 18px;
+    color: #0f2744;
+}
+
+.others .serv .serv-logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a6eb5;
+}
+
+.others .serv .serv-logo i{
+    font-size: 20px;
+    color: #ffffff;
+}

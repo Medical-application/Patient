@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #eef5fb;
+    display: flex;
+}
+
+.container {
+    min-height: 100vh;
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 40px;
+    direction: rtl;
+    gap: 25px;
+}
+
+.page-header h2 {
+    font-size: 26px;
+    font-weight: 800;
+    color: #0f2744;
+}
+
+.page-header p {
+    font-size: 14px;
+    color: #1a6eb5;
+    font-weight: 500;
+}
+
+.profile-card {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(15, 39, 68, 0.08);
+    overflow: hidden;
+}
+
+.card-header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    border-bottom: 1px solid rgba(26, 110, 181, 0.12);
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e8f2fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar i {
+    font-size: 18px;
+    color: #1a6eb5;
+}
+
+.header-right span {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0f2744;
+}
+
+.btn-edit {
+    height: 36px;
+    padding: 0 18px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #1a6eb5;
+    color: #ffffff;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15);
+    transition: background 0.25s;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.btn-edit:hover {
+    background-color: #0f2744;
+}
+
+.profile-form {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+.field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.field label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a6eb5;
+    text-align: right;
+}
+
+.field input {
+    width: 100%;
+    height: 48px;
+    padding: 0 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(26, 110, 181, 0.2);
+    background-color: #f5f9fd;
+    color: #0f2744;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 15px;
+    text-align: right;
+    outline: none;
+    transition: border 0.2s, background 0.2s;
+}
+
+.field input:disabled {
+    background-color: #f0f4f8;
+    color: #6b8aab;
+    cursor: default;
+}
+
+.field input:not(:disabled) {
+    background-color: #ffffff;
+    border-color: #1a6eb5;
+}
+
+.field input.readonly:disabled {
+    background-color: #f0f4f8;
+    color: #a0b4c8;
+    cursor: not-allowed;
+}
+
+.form-actions {
+    display: none;
+    flex-direction: row-reverse;
+    gap: 12px;
+    padding-top: 5px;
+}
+
+.btn-save {
+    height: 42px;
+    padding: 0 24px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    background-color: #1a6eb5;
+    color: #ffffff;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15);
+    transition: background 0.25s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-save:hover {
+    background-color: #0f2744;
+}
+
+.btn-cancel {
+    height: 42px;
+    padding: 0 24px;
+    border: 1px solid rgba(26, 110, 181, 0.3);
+    outline: none;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #0f2744;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.btn-cancel:hover {
+    background-color: #f0f4f8;
+}
