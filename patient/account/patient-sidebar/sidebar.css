@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.sidebar{
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    width: 22%;
+    background-color: #0f2744;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 1) ;
+}
+
+.sidebar .title{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right:20px;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px rgba(255,255,255,0.15) solid;
+}
+.logo{
+
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a6eb5;
+}
+
+.logo  i{
+   font-size: 30px;
+   color: #e0f0ff;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 30px;
+    color: #e0f0ff;
+}
+
+.content{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px rgba(255,255,255,0.15) solid;
+}
+
+.links{
+    height: 40px;
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding-right: 10px;
+    gap: 10px;
+}
+
+.links i{
+  color: #7ab8f5;
+}
+
+.links a{
+    font-size: 18px;
+    color: #c8dff5;
+    font-weight: 500;
+}
+
+.links:hover{
+    background-color: rgba(26, 110, 181, 0.35);
+}
+
+
+.profile{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pro{
+    display: flex;
+    flex-direction: row-reverse;
+    padding:20px 20px 0 0;
+    gap: 20px;
+}
+
+.pro p{
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 10px;
+    color: #e0f0ff;
+}
+
+
+ .prologo{
+    height: 40px;
+    width: 40px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a6eb5;
+}
+
+.prologo i{
+    font-size: 20px;
+    color: #e0f0ff;
+}
+.logout {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.logout button{
+    width: 80%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-color: #c0392b;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Tajawal', sans-serif;
+    cursor: pointer;
+}
